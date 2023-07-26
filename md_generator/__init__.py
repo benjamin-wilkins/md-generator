@@ -1,2 +1,2 @@
-import md_html
-import format_html
+import md_generator.md_html
+import md_generator.format_html
