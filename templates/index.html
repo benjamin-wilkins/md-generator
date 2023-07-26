@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Template with markdown blocks</title>
+    <style>
+      .section {
+        border: 2px solid black;
+      }
+
+      hr {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      The following content is loaded from the file {{b1_name}}
+      <hr>
+      {% block b1 %}{% endblock %}
+    </div>
+    <div class="section">
+      The following content is loaded from the file {{b2_name}}
+      <hr>
+      {% block b2 %}{% endblock %}
+    </div>
+  </body>
+</html>
